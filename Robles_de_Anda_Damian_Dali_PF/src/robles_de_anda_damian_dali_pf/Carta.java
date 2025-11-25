@@ -6,12 +6,14 @@ public class Carta {
     private String palo;
     private String valor;
     private int valorNumerico;
+    private String cartaGrafica;
 
     // * constructor
-    public Carta(String palo, String valor, int valorNumerico) {
+    public Carta(String palo, String valor, int valorNumerico, String cartaGrafica) {
         this.palo = palo;
         this.valor = valor;
         this.valorNumerico = valorNumerico;
+        this.cartaGrafica = cartaGrafica;
     }
 
     // * getters
@@ -24,6 +26,9 @@ public class Carta {
     public int getValorNumerico() {
         return valorNumerico;
     }
+    public String getCartaGrafica() {
+        return cartaGrafica;
+    }
 
     // * setters
     public void setPalo(String palo) {
@@ -34,6 +39,9 @@ public class Carta {
     }
     public void setValorNumerico(int valorNumerico) {
         this.valorNumerico = valorNumerico;
+    }
+    public void setCartaGrafica(String cartaGrafica) {
+        this.cartaGrafica = cartaGrafica;
     }
 
 }
